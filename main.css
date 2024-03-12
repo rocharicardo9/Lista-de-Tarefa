@@ -14,10 +14,15 @@
   }
   
   .task-container {
-    position: relative; /* Permite que o conteúdo fique sobre a imagem de fundo */
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
-    border-radius: 10px;
-    margin: 20px;
-  }
+    position: absolute; /* Posiciona o contêiner de tarefas de forma absoluta */
+    top: 0; /* Alinha o topo do contêiner de tarefas com o topo do ancestral */
+    left: 0; /* Alinha a esquerda do contêiner de tarefas com a esquerda do ancestral */
+    width: 100%; /* Define a largura do contêiner de tarefas como 100% */
+    height: 100%; /* Define a altura do contêiner de tarefas como 100% */
+    padding: 20px; /* Adiciona um preenchimento interno de 20px */
+    background-color: rgba(255, 255, 255, 0.8); /* Define um fundo branco com 80% de opacidade */
+    border-radius: 10px; /* Adiciona cantos arredondados com raio de 10px */
+    margin: 20px; /* Adiciona uma margem externa de 20px */
+}
+
   
